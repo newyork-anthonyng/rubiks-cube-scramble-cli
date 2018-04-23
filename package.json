@@ -1,0 +1,44 @@
+{
+  "name": "rubiks-cube-scramble-cli",
+  "version": "0.0.0-development",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "afterSuccess": "codecov",
+    "commit": "git cz",
+    "test": "exit 0",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "bin": {
+    "getScramble": "./bin/getScramble.js"
+  },
+  "keywords": ["rubiks", "cube", "cli", "scrambler"],
+  "author": "Anthony Ng <newyork.anthonyng@gmail.com> (http://anthonyng.me)",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.0",
+    "create-empty-array": "^1.0.2",
+    "cube-scrambler": "^1.1.0",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "codecov": "^3.0.0",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
+    "semantic-release": "^15.1.7",
+    "travis-deploy-once": "^4.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/newyork-anthonyng/rubiks-cube-scramble-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/newyork-anthonyng/rubiks-cube-scramble-cli/issues"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
