@@ -5,7 +5,7 @@ const argv = require("yargs")
   .describe("number", "Get number of rubiks scrambles")
   .alias("n", "number").argv;
 const createEmptyArray = require("create-empty-array");
-const getScramble = require("../lib");
+const getScramble = require("../lib").getScramble;
 
 let number = Math.max(argv.number, 1);
 if (typeof number !== "number" || Number.isNaN(number)) {

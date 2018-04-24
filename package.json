@@ -6,14 +6,22 @@
   "scripts": {
     "afterSuccess": "codecov",
     "commit": "git cz",
-    "test": "exit 0",
+    "test": "jest",
+    "test.watch": "jest --watch",
+    "test.cover": "jest --coverage",
     "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "validate": "npm run test.cover"
   },
   "bin": {
     "getScramble": "./bin/getScramble.js"
   },
-  "keywords": ["rubiks", "cube", "cli", "scrambler"],
+  "keywords": [
+    "rubiks",
+    "cube",
+    "cli",
+    "scrambler"
+  ],
   "author": "Anthony Ng <newyork.anthonyng@gmail.com> (http://anthonyng.me)",
   "license": "MIT",
   "dependencies": {
@@ -26,6 +34,7 @@
     "codecov": "^3.0.0",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.1.0",
+    "jest": "^22.4.3",
     "semantic-release": "^15.1.7",
     "travis-deploy-once": "^4.4.1"
   },
