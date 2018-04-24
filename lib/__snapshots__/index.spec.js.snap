@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should call console.log with correct arguments 1`] = `
+Array [
+  "U,U,U,U (bgWhite, black)",
+  "U,U,D,D (bgYellow, black)",
+  "D,D,D,D (bgBlue, white)",
+  "R,R,R,R (bgGreen, black)",
+  "R,R,L,L (bgRed, white)",
+  "L,L,L,L (bgorange, black)",
+]
+`;
+
+exports[`should have correct COLORS 1`] = `
+Array [
+  [MockFunction],
+  [MockFunction],
+  [MockFunction],
+  [MockFunction],
+  [MockFunction],
+  [MockFunction],
+]
+`;
+
+exports[`should have correct SCRAMBLE_SPLIT_INDEXES 1`] = `
+Array [
+  Object {
+    "beginning": 0,
+    "ending": 4,
+  },
+  Object {
+    "beginning": 4,
+    "ending": 8,
+  },
+  Object {
+    "beginning": 8,
+    "ending": 12,
+  },
+  Object {
+    "beginning": 12,
+    "ending": 16,
+  },
+  Object {
+    "beginning": 16,
+    "ending": 20,
+  },
+  Object {
+    "beginning": 20,
+    "ending": 24,
+  },
+]
+`;
